@@ -1,0 +1,34 @@
+-- 1. Tabel Proyek
+CREATE TABLE proyek (
+    id_proyek CHARACTER VARYING(20) PRIMARY KEY,
+    nama_proyek CHARACTER VARYING(100) NOT NULL,
+    client CHARACTER VARYING(100) NOT NULL,
+    budget NUMERIC(15,2) NOT NULL
+);
+
+-- 2. Tabel Developer
+CREATE TABLE developer (
+    id_developer SERIAL PRIMARY KEY,
+    nama_dev CHARACTER VARYING(100) NOT NULL,
+    id_proyek CHARACTER VARYING(20),
+    status_kontrak CHARACTER VARYING(20) CHECK (status_kontrak IN ('Freelance', 'Fulltime')),
+    ftur_selesai INTEGER DEFAULT 0,
+    jumlah_bug INTEGER DEFAULT 0,
+    skor NUMERIC(10,2) DEFAULT 0,
+    total_gaji NUMERIC(15,2) DEFAULT 0,
+    FOREIGN KEY (id_proyek) REFERENCES proyek(id_proyek) ON DELETE SET NULL
+);
+
+-- Insert data proyek
+INSERT INTO proyek (id_proyek, nama_proyek, client, budget) VALUES
+('P-001', 'Web Company Profile', 'CV Sejahtera', 8000000.00),
+('P-002', 'Sistem Parkir QR', 'Dinas Perhubungan', 15000000.00),
+('P-003', 'IoT Agriculture App', 'Tani Maju Indonesia', 25000000.00),
+('P-004', 'E-Commerce Startup', 'PT Maju Mundur', 100000000.00),
+('P-005', 'AI Fraud Detection', 'Unicorn Fintech', 150000000.00);
+
+-- Insert data developer
+INSERT INTO developer (nama_dev, id_proyek, status_kontrak, ftur_selesai, jumlah_bug) VALUES
+('Budi Santoso', 'P-001', 'Freelance', 8, 2),
+('Ani Wijaya', 'P-002', 'Fulltime', 15, 1),
+('Citra Dewi', 'P-003', 'Freelance', 12, 3);
