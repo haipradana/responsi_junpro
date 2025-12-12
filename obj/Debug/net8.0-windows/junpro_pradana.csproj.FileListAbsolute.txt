@@ -21,3 +21,4 @@ C:\Users\haipradana\Documents\junpro\junpro_pradana\obj\Debug\net8.0-windows\jun
 C:\Users\haipradana\Documents\junpro\junpro_pradana\obj\Debug\net8.0-windows\junpro_pradana.genruntimeconfig.cache
 C:\Users\haipradana\Documents\junpro\junpro_pradana\obj\Debug\net8.0-windows\ref\junpro_pradana.dll
 C:\Users\haipradana\Documents\junpro\junpro_pradana\obj\Debug\net8.0-windows\junpro_pradana.Properties.Resources.resources
+C:\Users\haipradana\Documents\junpro\junpro_pradana\obj\Debug\net8.0-windows\junpro_pradana.sourcelink.json

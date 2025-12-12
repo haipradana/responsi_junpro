@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("junpro_pradana")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4259c4200093f5251241d8c08dc47ee86261ed4d")]
 [assembly: System.Reflection.AssemblyProductAttribute("junpro_pradana")]
 [assembly: System.Reflection.AssemblyTitleAttribute("junpro_pradana")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
